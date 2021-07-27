@@ -18,4 +18,6 @@ use App\Http\Controllers\calculateController;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// define route for API
 Route::post('GetCntDaysWeeks', [calculateController::class, 'getData']);
